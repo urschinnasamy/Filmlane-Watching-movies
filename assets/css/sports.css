@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+ #movies-contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Movie Item */
+.movie {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.movie h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #e2e8f0;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .movie h3 {
+        font-size: 1rem;
+    }
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.movie-title{
+    color: white;
+}
+
+.movie-item img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.movie-item{
+
+    margin: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    /* border: 1px solid yellow; */
+    
+}
+
+.movie-change-heading{
+    text-align: center;
+    color: #e2e8f0;
+}
+
+
+
+.sports-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    /* border: 1px solid brown; */
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quicklink-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    list-style-type: none;
+    
+}
+
+.quicklink-list li{
+    padding-left: 10px;
+    text-decoration: none;
+    
+}
+
+.quicklink-list li a{
+    color: #fff;
+    text-decoration: none;
+}

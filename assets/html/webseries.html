@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmlane - Movies</title>
+  <link rel="stylesheet" href="../css/movies.css">
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container1">
+      <!-- <div class="overlay" data-overlay></div> -->
+        <a href="../html/index.html" class="logo">
+          <img src="../images/logo.svg" alt="Filmlane logo">
+        </a>
+      <div class="header-actions">
+        <select id="languageSelector" onchange="fetchMoviesByLanguage()">
+          <option value="en">Hollywood</option>
+          <option value="hi">Bollywood</option>
+          <option value="te">Tollywood</option>
+          <option value="ta">Kollywood</option>
+          <option value="kn">Sandalwood</option>
+          <option value="pa">Pollywood</option>
+          <option value="ml">Mollywood</option>
+          <option value="or">Ollywood</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- <h1>Movies</h1> -->
+   <div>
+     <h1 id ="movie-heading" class="movie-change-heading"></h1>
+   </div>
+  <div class="container" id="movies-container">
+    
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="divider"></div>
+        <div class="quicklink-wrapper">
+          <ul class="quicklink-list">
+            <li><a href="#" class="quicklink-link">Faq</a></li>
+            <li><a href="#" class="quicklink-link">Help center</a></li>
+            <li><a href="#" class="quicklink-link">Terms of use</a></li>
+            <li><a href="#" class="quicklink-link">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">&copy; 2024 <a href="#">chinnasamy</a>. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/weseries.js"></script>
+</body>
+</html>
